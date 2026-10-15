@@ -47,7 +47,7 @@ const MoreDropdownComponent: React.FC<MoreDropdownComponentProps> = ({
                 {
                   key: "discord",
                   title: "Discord",
-                  href: "https://discord.gg/mmtfinance ",
+                  href: "https://discord.gg/mmtfinance",
                   openInNewTab: true,
                 },
                 {
