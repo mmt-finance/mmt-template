@@ -12,9 +12,9 @@ export default function CopyIcon(props: CopyIconProps) {
   const [isCopied, setIsCopied] = useState(false);
 
   useEffect(() => {
-    if (isCopied) {
-      setTimeout(() => setIsCopied(false), 1_000);
-    }
+    if (!isCopied) return;
+    const timeoutId = window.setTimeout(() => setIsCopied(false), 1_000);
+    return () => window.clearTimeout(timeoutId);
   }, [isCopied]);
 
   const handleCopy = () => {

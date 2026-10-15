@@ -83,12 +83,12 @@ export default function WalletsSelection({ onSelect }: WalletsSelectionProps) {
         <p className="text-text-sm font-medium text-gray-300">Select Wallet</p>
       </div>
       <div className="h-px w-full bg-[#17181D]" />
-      {wallets
-        ?.sort((a, b) => {
-          if (a.name.includes("Slush")) {
-            return -1;
-          }
-          return 1;
+      {[...(wallets ?? [])]
+        .sort((a, b) => {
+          const aSlush = a.name.includes("Slush");
+          const bSlush = b.name.includes("Slush");
+          if (aSlush === bSlush) return 0;
+          return aSlush ? -1 : 1;
         })
         .map((wallet) => (
           <button

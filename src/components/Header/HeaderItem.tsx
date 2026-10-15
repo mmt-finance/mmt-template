@@ -29,8 +29,11 @@ const HeaderItem: React.FC<HeaderItemProps> = ({
       onMouseLeave={onMouseLeave}
     >
       <a
-        href={href}
-        target={target}
+        href={href || undefined}
+        target={href ? target : undefined}
+        onClick={(event) => {
+          if (!href) event.preventDefault();
+        }}
         className="relative flex w-fit cursor-pointer items-center justify-center gap-2"
       >
         <p

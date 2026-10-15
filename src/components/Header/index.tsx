@@ -41,7 +41,9 @@ const Header = () => {
         <a href="/" className="flex items-center justify-start gap-1">
           <img
             src={
-              isMobile ? "./mmt-logo-sq-transparent.svg" : "./momentum-logo.svg"
+              isMobile
+                ? "/mmt-logo-sq-transparent.svg"
+                : "/momentum-logo.svg"
             }
             alt="Momentum Logo"
             width={182}

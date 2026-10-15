@@ -26,27 +26,27 @@ const MobileHeaderOptions = () => {
             {
               key: "trade",
               title: "Trade",
-              href: "/trade?state=swap",
+              href: "https://app.mmt.finance/trade",
             },
             {
               key: "liquidity",
               title: "Liquidity",
-              href: "/liquidity",
+              href: "https://app.mmt.finance/liquidity",
             },
             {
               key: "stake",
               title: "xSUI",
-              href: "/stake",
+              href: "https://app.mmt.finance/stake",
             },
             {
               key: "vault",
               title: "Vault",
-              href: "/vault",
+              href: "https://app.mmt.finance/vault",
             },
             {
               key: "portfolio",
               title: "Portfolio",
-              href: "/portfolio",
+              href: "https://app.mmt.finance/portfolio",
             },
             {
               key: "bridge",
@@ -56,7 +56,7 @@ const MobileHeaderOptions = () => {
             {
               key: "leaderboard",
               title: "Leaderboard",
-              href: "/leaderboard",
+              href: "https://app.mmt.finance/leaderboard",
             },
           ]}
         />
